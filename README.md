@@ -15,7 +15,7 @@ Este módulo fue diseñado con la capacidad de adaptar el sistema a nuevas regla
 
 - [Diseño de MVE y Supuestos](/docs/diseno_supuestos.md)
 - [Exclusiones](/docs/exclusiones.md)
-- [Valor que Aporta la Solución](/docs/valor.md)
+- [Valor de la Solución](/docs/valor.md)
 - [Parte 3 - Algunas preguntas](/docs/preguntas.md)
 
 ## Pre-requisitos
@@ -25,7 +25,7 @@ Este módulo fue diseñado con la capacidad de adaptar el sistema a nuevas regla
 
 ### Paso 1: Clona el repositorio
 ```
-git clone https://github.com/manjurulhoque/doccure.git
+git clone https://github.com/vvdiaz1/cero_filtro_citas.git
 ```
 
 ### Paso 2: Crea un ambiente virtual

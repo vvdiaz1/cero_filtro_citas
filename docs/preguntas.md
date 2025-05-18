@@ -2,9 +2,9 @@
 
 1. **Un centro médico te pide directamente con carácter urgente modificar sus políticas de contacto con pacientes de manera que entra en conflicto con tu implementación actual. ¿Cuál sería tu estrategia para abordar esta situación?**	
    
-    Mi estrategia se enfocaría en una respuesta ágil y pragmática. Lo primero sería comprender la urgencia real y los plazos esperados para la implementación de esta modificación por parte del centro médico. Esta información es crucial para dimensionar el esfuerzo.
+    Mi estrategia se enfocaría en una respuesta ágil. Lo primero sería comprender la urgencia real y los plazos esperados para la implementación de esta modificación por parte del centro médico. Esta información es crucial para dimensionar el esfuerzo.
 
-    Además, se debe evaluar en detalle de qué manera específica la nueva política entra en conflicto con la implementación existente. Esto implica identificar si la modificación requiere: ajustes a la lógica de filtrado con información ya disponible (¿es posible extender la funcionalidad actual incorporando un nuevo validador de matching y actualizando las reglas?), si se requieren datos que actualmente no están disponibles (como información demográfica adicional) se debe evaluar la viabilidad y el tiempo estimado de para una nueva integración para obtener esta información. 
+    Además, se debe evaluar en detalle de qué manera específica la nueva política entra en conflicto con la implementación existente. Esto implica identificar si la modificación requiere: ajustes a la lógica de filtrado con información ya disponible (¿es posible extender la funcionalidad actual incorporando un nuevo validador de matching y actualizando las reglas?), si se requieren datos que actualmente no están disponibles (como información demográfica adicional) se debe evaluar la viabilidad y el tiempo estimado de crear una nueva integración para obtener esta información. 
 
     En estos casos, se consideraría la posibilidad de implementar un "fix" inicial que permita cumplir con la urgencia utilizando una fuente de datos alternativa o un método de obtención menos ideal pero funcional a corto plazo. Esta solución temporal debera coexistir con el desarrollo de una integración más robusta y optimizada a futuro. 
 
@@ -13,7 +13,7 @@
 
 2. **Necesitas comunicar ciertas restricciones técnicas a representantes institucionales sin formación tecnológica. ¿Qué métodos utilizarías para asegurar una comunicación efectiva?**
 
-    Mi estrategia en este caso, se centraría en adaptar el mensaje al contexto de la audiencia. Inicialmente, buscaría comprender el nivel de conocimiento técnico de estos representantes y su involucramiento con el problema, diferenciando entre stakeholders de alto nivel o personal operativo no técnico. 
+    Mi estrategia en este caso, se centraría en adaptar el mensaje al contexto de la audiencia. Inicialmente, buscaría comprender el nivel de conocimiento técnico de estos representantes y su involucramiento con el problema, diferenciando entre stakeholders o personal operativo no técnico. 
 
     Teniendo esto en consideración, el método principal sería la utilización de una presentación visual clara y concisa (apoyándome en slides, demos o un diagramas que ilustren el proceso). Con el fin de señalar específicamente dónde radica la restricción técnica, evitando la vocabulario técnico. Un punto clave sería explorar si estas restricciones son inherentemente limitantes o si existen alternativas o soluciones posibles. 
 
@@ -23,7 +23,7 @@
 
 3. **Ante la llegada simultánea de varias peticiones de modificación procedentes de distintas instituciones, ¿qué criterios aplicarías para establecer prioridades y cómo comunicarías estas decisiones?**
 
-    En este caso aplicaría una serie de criterios para establecer prioridades de manera objetiva y transparente. 
+    En este caso aplicaría una serie de criterios para establecer prioridades de manera objetiva y clara. 
 
     En primer lugar, evaluaría la percepción del cliente sobre la solicitud, distinguiendo si se trata de la corrección de una funcionalidad defectuosa o de una mejora adicional a lo ya existente, priorizando las primeras.
 
@@ -33,11 +33,11 @@
 
     Finalmente, analizaría si algunas modificaciones pueden consolidarse en una única solución, priorizando aquellas que resuelvan múltiples necesidades al mismo tiempo.
 
-    La comunicación de estas decisiones se basaría en la claridad y la transparencia en los plazos, evitando respuestas vagas y proporcionando actualizaciones regulares sobre el estado de cada solicitud. El foco sería que el mensaje transmitido deje clara la importancia que se le otorga, la evaluación responsable de su petición y el compromiso de entregar la mejor solución posible, aunque esto pueda requerir tiempo y una dedicación específica del equipo, explicando las posibles limitaciones de recursos o la necesidad de una planificación cuidadosa.
+    La comunicación de estas decisiones se basaría en la claridad y la transparencia en los plazos, evitando respuestas vagas y proporcionando actualizaciones regulares sobre el estado de cada solicitud. El foco debería ser que el mensaje transmitido deje clara la importancia de la petición, la evaluación responsable que se hizo de etsa y el compromiso de entregar la mejor solución posible, aunque esto pueda requerir tiempo y una dedicación específica del equipo, explicando las posibles limitaciones de recursos o la necesidad de una planificación cuidadosa.
 
 4. **Has identificado que una institución proporciona datos en formatos inconsistentes, provocando errores intermitentes en tu sistema de filtrado. ¿Qué proceso seguirías para identificar el origen del problema y desarrollar una solución adecuada?**
 
-    En este caso, lo principal seria identificar la raíz del problema y desarrollar una solución adecuada. Lo primero sería rastrear el origen de los errores, investigando si la inconsistencia se introduce en el módulo de "consultar citas" o si ya existe en los datos proporcionados por el sistema de origen de la institución.
+    Lo primero sería rastrear el origen de los errores, investigando si la inconsistencia se introduce en el módulo de "consultar citas" o si ya existe en los datos proporcionados por el sistema de origen de la institución.
 
     Si la inconsistencia se origina en el módulo de "consultar citas", exploraría la implementación de una capa adicional de validación y transformación para asegurar un formato de salida uniforme y estandarizado. 
 

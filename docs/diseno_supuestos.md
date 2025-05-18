@@ -20,7 +20,7 @@ El diseño contempla 3 etapas clave:
 
 ### Evaluación de reglas 
 
-Este es el componente principal de la solución,recibe como entrada la lista de reglas cargadas y la lista de citas. Para cada cita, itera a través de las reglas activas y evalúa si la cita cumple con las condiciones especificadas para cada regla. Utiliza un conjunto de funciones de "matching" (como match_especialidad, match_profesional, match_dias_antes, etc.) para comparar los atributos de la cita con las condiciones de la regla y evaluar si la cumple.
+Este es el componente principal de la solución, recibe como entrada la lista de reglas cargadas y la lista de citas. Para cada cita, itera a través de las reglas activas y evalúa si la cita cumple con las condiciones especificadas para cada regla. Utiliza un conjunto de funciones de "matching" (como match_especialidad, match_profesional, match_dias_antes, etc.) para comparar los atributos de la cita con las condiciones de la regla y evaluar si la cumple.
 
 - **Validadores de Matching:** Un conjunto de funciones de "matching" que consideran los campos relevantes para el filtrado de reglas, permitiendo así el dinamismo en las condiciones de estas, lo que habilita al diseño a incluir reglas más complejas en un futuro sin necesidad de modificar la estructura principal del sistema.
   
@@ -38,7 +38,7 @@ Este es el componente principal de la solución,recibe como entrada la lista de 
 
 ### Filtrado de citas según reglas  
 
-- **Filtrado de citas**: Este componente entrega una lista de las citas que cumplen con los criterios para ser contactadas con el mismo formato en el que se ingresaron.Es decir, determina si el paciente de la cita debe ser contactado el día de hoy. 
+- **Filtrado de citas**: Este componente entrega una lista de las citas que cumplen con los criterios para ser contactadas con el mismo formato en el que se ingresaron. Es decir, determina si el paciente de la cita debe ser contactado el día de hoy. 
 
 ## Supuestos 🤔
 
@@ -47,6 +47,8 @@ Para abordar este problema, se han realizado las siguientes suposiciones:
 - **Formato Consistente de Citas:** Se asume que el módulo "consultar citas" entrega una lista de diccionarios con una estructura consistente dentro de cada institución, aunque pueda variar entre ellas, para este prototipo se considera sólo una institución. 
 
 - **Calidad del Dato:** Se asume que el módulo consultar citas y/o integraciones a las API de la institución ya contienen ciertas reglas de validación para los télefonos de los pacientes y asegura que las citas consultadas son contactables. Sin embargo, el módulo de filtrado considera ciertas validaciones básicas de que el dato no venga vacio para los campos utilizados.
+
+- **Múltiples citas al Mismo Tiempo:** Se asume que el sistema de citas no permite agendar más de una cita en la misma fecha y hora.
 
 - **Contactabilidad por defecto:** En el caso de que alguna regla no contenga información sobre la cantidad de días previos a la cita en la cúal se debe contactar al paciente, se contactará el día previo a la cita
 
