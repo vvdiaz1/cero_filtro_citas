@@ -1,7 +1,4 @@
 import os
-import sys
-import pandas as pd
-import numpy as np
 from collections import defaultdict
 from datetime import datetime, date
 import json
@@ -305,8 +302,9 @@ def match_dias_antes(condicion,cita,hoy:str = date.today().strftime('%Y-%m-%d'))
     if condicion.get('dias_antes',None) is not None and cita.get("fecha_hora", None)is not None:
         fecha_hora =cita.get("fecha_hora", None)
         return condicion.get('dias_antes',None)==dias_hasta_cita(fecha_hora,hoy)
-    elif condicion.get('dias_antes',None) is None and cita.get("fecha_hora", None) is not None:
+    elif condicion.get('dias_antes',None) is None:
         dias_antes_default = 1
+        fecha_hora =cita.get("fecha_hora", None)
         return dias_antes_default ==dias_hasta_cita(fecha_hora,hoy)
 
 
@@ -331,19 +329,11 @@ def contactar_cita(
     for regla in reglas:
         if regla.get("activa")==True:
             checks = []
-            for condicion in regla.get("condiciones"):
+            for condicion in regla.get("condiciones",[]):
                 if condicion.get("enviar_mensaje",None) == True:
                     checks.append(condicion_match(condicion, cita, hoy))
             return any(c in (True, None) for c in checks)
 
-# def filtrar_citas(
-#         citas:List[Dict[str, Union[int, str, bool]]],
-#         reglas:List[Dict[str, Union[int, str, bool]]], 
-#         hoy:str = date.today().strftime('%Y-%m-%d')
-#     )->List[Dict[str, Union[int, str, bool]]]:
-#     filtro_citas:list = []
-#     for cita in citas:
-#         filtro_citas.append(contactar_cita(cita,reglas, hoy))
 
 def filtrar_citas_para_contactar(
         citas: List[Dict[str, Union[int, str, bool]]],
@@ -363,18 +353,18 @@ def filtrar_citas_para_contactar(
     """
     return [cita for cita in citas if contactar_cita(cita, reglas, hoy)]
     
-    
+
 def main():
     abspath = os.path.abspath(__file__)
     dirname = os.path.dirname(os.path.dirname(abspath))
     data_folder = os.path.join(dirname, 'data')
     reglas_path = os.path.join(data_folder, 'reglas.json')
     citas_path = os.path.join(data_folder, 'citas.json')
-
     citas_filtradas_path = os.path.join(data_folder, 'citas_filtradas.json')
+
     reglas:dict = cargar_reglas(reglas_path=reglas_path)
     citas:dict = cargar_citas(citas_path=citas_path)
-    
+
     hoy_str:str = str(input("Ingrese la fecha actual (YYYY-MM-DD): "))
     try:
         datetime.strptime(hoy_str, '%Y-%m-%d')
@@ -390,4 +380,58 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# # ##########################################
+# #2
+
+# reglas=cargar_reglas(reglas_path =r"data\reglas.json")
+# citas=cargar_citas(citas_path =r"data\citas.json")
+
+# # citas = [cita for cita in citas if cita['id']<300 ]
+# # regla=reglas[0]
+# # condicion=regla.get("condiciones")[0]
+# hoy='2025-05-18'
+
+# output:list = filtrar_citas_para_contactar(citas, reglas, hoy)
+# with open("citas_filtradas.json", 'w') as json_file:
+#     json.dump(output, json_file, indent=3)
+
+# for cita in citas:    
+#     print("id: ",cita.get("id",{}), " - ",contactar_cita(cita,reglas, hoy))
+#     # print("match_dias_antes: ",match_dias_antes(condicion,cita, hoy))#dias
+
+
+
+
+# # # for cita in citas:
+# # #     # print("id: ",cita.get("id",{}))
+# # #     # print("especialidad: ",cita.get("profesional",{}).get("especialidad",{}).get("nombre"))
+# # #     # print("profesional: ",cita.get("profesional",{}).get("apellido"))
+# # #     # print("tipo_lista: ",cita.get("atencion",{}).get("lista"))
+# # #     # print("atencion: ",cita.get("atencion",{}).get("tipo"))
+# # #     # print("estado: ",cita.get("estado",{}).get("nombre"))
+# # #     # print("edad: ", get_edad(cita.get("paciente",{}).get("fecha_nacimiento",None), hoy))
+# # #     # print("dias_hasta_cita: ",dias_hasta_cita(cita.get("fecha_hora", None),hoy))
+# # #     # print("hoy: ",hoy, " - fecha_hora: ",cita.get("fecha_hora", None))
+# # #     print("contactar_cita: ",contactar_cita(cita,reglas, hoy))
+# # #     # print("-"*20)
+# # #     for condicion in regla.get("condiciones",[]):
+# # #         print("regla: ",regla.get("regla"))
+# # #         print("match_especialidad: ",match_especialidad(condicion,cita)) #cardio
+# # #         print("match_profesional: ",match_profesional(condicion,cita))
+# # #         print("match_tipo_lista: ",match_tipo_lista(condicion,cita))
+# # #         print("match_tipo_atencion: ",match_tipo_atencion(condicion,cita))#diagnostico
+# # #         print("match_unidad_medica: ",match_unidad_medica(condicion,cita))
+# # #         print("match_estado: ",match_estado(condicion,cita))
+# # #         print("match_tercera_edad: ",match_tercera_edad(condicion, cita,hoy))
+# # #         print("match_dias_antes: ",match_dias_antes(condicion,cita, hoy))#dias
+# # #         print("----- FIN CONDICION -----")
+# # #     print("-"*50)
+# # #     print("-"*50)
+
+# # # for cita in citas:    
+# # #     print("id: ",cita.get("id",{}), " - ",contactar_cita(cita,reglas, hoy))
+
+
+
     

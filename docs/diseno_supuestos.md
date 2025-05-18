@@ -52,6 +52,8 @@ Para abordar este problema, se han realizado las siguientes suposiciones:
 
 - **Contactabilidad por defecto:** En el caso de que alguna regla no contenga información sobre la cantidad de días previos a la cita en la cúal se debe contactar al paciente, se contactará el día previo a la cita
 
+- **Niños en pediatria:** Se asume que todos los pacientes de pediatría son niños
+
 - **Ejecución Diaria:** Se asume que el proceso de filtrado se ejecuta diariamente (en la madrugada del día en curso) tomando como referencia la fecha actual para evaluar condiciones basadas en la proximidad de la cita.
 
 - **Traslape de Reglas:** En caso de que una cita cumpla con múltiples reglas, la decisión de contactar (o no contactar) se basa en la existencia de al menos una regla activa con la condición de enviar_mensaje en true.

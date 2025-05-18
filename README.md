@@ -31,7 +31,7 @@ git clone https://github.com/vvdiaz1/cero_filtro_citas.git
 ### Paso 2: Crea un ambiente virtual
 ```
 py -m venv venv
-venv\Scripts\activate source 
+venv\Scripts\activate 
 ```
 
 ### Paso 3: Instala las dependencias
@@ -40,7 +40,7 @@ pip install -r requirements.txt
 ```
 
 ### Paso 4: Crea el archivo citas.json (input del módulo)
-Este archivo se genera en base a un [archivo de google sheets](/https://docs.google.com/spreadsheets/d/1-4MUM3TyGO5rbDo-2fgphXoW_vvNZk96oqJJeMRglmI/edit?usp=sharing)
+Este archivo se genera en base a un [archivo de google sheets](https://docs.google.com/spreadsheets/d/1-4MUM3TyGO5rbDo-2fgphXoW_vvNZk96oqJJeMRglmI/edit?usp=sharing)
 
 ```
 py src/consultar_citas.py

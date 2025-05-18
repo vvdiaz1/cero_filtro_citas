@@ -42,7 +42,7 @@
                     "apellido": "Martinez"
                 },
                 "tercera_edad": false,
-                "dias_antes": 2
+                "dias_antes": 1
             }   
         ]
     },
@@ -111,38 +111,12 @@
                 "especialidad": {
                     "nombre": "cardiologia"
                 },
-                "atencion": {
-                    "tipo":"control"
-                },
                 "dias_antes":5
             },
             {
                 "enviar_mensaje":true,
                 "especialidad": {
                     "nombre": "cardiologia"
-                },
-                "atencion": {
-                    "tipo":"diagnostico"
-                },
-                "dias_antes":5
-            },
-            {
-                "enviar_mensaje":true,
-                "especialidad": {
-                    "nombre": "cardiologia"
-                },
-                "atencion": {
-                    "tipo":"control"
-                },
-                "dias_antes":0
-            },
-            {
-                "enviar_mensaje":true,
-                "especialidad": {
-                    "nombre": "cardiologia"
-                },
-                "atencion": {
-                    "tipo":"diagnostico"
                 },
                 "dias_antes":0
             }
