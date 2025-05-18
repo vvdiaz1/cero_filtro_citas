@@ -1,0 +1,172 @@
+[
+    { 
+        "id": 1,
+        "activa":true,
+        "version":1,
+        "fecha_modificacion":"2025-05-17",
+        "regla": "cardiologia_primera_vez_2dias_antes",
+        "descripcion": "Necesitamos que los pacientes de corazón reciban un mensaje dos días antes, pero solo los que vienen por primera vez, no los controles",
+        "institucion": {
+            "id": 2017,
+            "nombre":"Hospital Cero"
+        }, 
+        "condiciones": [
+            {   
+                "enviar_mensaje": true,
+                "especialidad": {
+                    "nombre": "cardiologia"
+                },
+                "atencion": {
+                    "tipo":"diagnostico"
+                },
+                "dias_antes": 2
+            }
+        ]
+    },
+    { 
+        "id": 2,
+        "activa":true,
+        "version":1,
+        "fecha_modificacion":"2025-05-17",
+        "regla": "dr_martinez_no_tercera_edad",
+        "descripcion": "Para el Dr. Martínez no estamos enviando mensajes, pero ahora quiere que avisemos a sus pacientes el día anterior, excepto a los de la tercera edad porque prefiere llamarlos personalmente",
+        "institucion": {
+            "id": 2017,
+            "nombre":"Hospital Cero"
+        },
+        "condiciones": [
+            {   
+                "enviar_mensaje": true,
+                "profesional": {
+                    "rut": "5987654-K",
+                    "apellido": "Martinez"
+                },
+                "tercera_edad": false,
+                "dias_antes": 2
+            }   
+        ]
+    },
+    { 
+        "id": 3,
+        "activa":true,
+        "version":1,
+        "fecha_modificacion":"2025-05-17",
+        "regla": "controles_pedriatria_no_lista_espera",
+        "descripcion":"Solo queremos contactar a los niños de pediatría que tienen hora agendada, los que están en lista de espera no porque esas horas cambian mucho. Y solo si son controles",
+        "institucion": {
+            "id": 2017,
+            "nombre":"Hospital Cero"
+        }, 
+        "condiciones": [
+            {
+                "enviar_mensaje":true,
+                "especialidad": {
+                    "nombre": "pedriatria"
+                },
+                "estado": {
+                    "nombre":"agendada"
+                },
+                "atencion": {
+                    "tipo":"control"
+                },
+                "lista_espera":false
+            }
+        ]
+    },
+    { 
+        "id": 4,
+        "activa":true,
+        "version":1,
+        "fecha_modificacion":"2025-05-17",
+        "regla": "dra_gomez_no_contactar",
+        "descripcion":"La doctora Gómez no quiere que contactemos a sus pacientes bajo ninguna circunstancia, ella tiene su propio sistema. Su RUT es 15678432-9, para que los filtren del sistema",
+        "institucion": {
+            "id": 2017,
+            "nombre":"Hospital Cero"
+        }, 
+        "condiciones": [
+            {
+                "enviar_mensaje":false,
+                "profesional": {
+                    "rut": "15678432-9",
+                    "apellido": "Gomez"
+                }
+            }
+        ]
+    },
+    { 
+        "id": 5,
+        "activa":true,
+        "version":1,
+        "fecha_modificacion":"2025-05-17",
+        "regla": "cardiologia_0_dias_5dias_control_diagnostico",
+        "descripcion":"Hemos decidido que todos los pacientes de cardiología deben recibir dos mensajes: 5 días antes y el mismo día de la cita. Esto incluye tanto primeras consultas como controles.",
+        "institucion": {
+            "id": 2017,
+            "nombre":"Hospital Cero"
+        }, 
+        "condiciones": [
+            {
+                "enviar_mensaje":true,
+                "especialidad": {
+                    "nombre": "cardiologia"
+                },
+                "atencion": {
+                    "tipo":"control"
+                },
+                "dias_antes":5
+            },
+            {
+                "enviar_mensaje":true,
+                "especialidad": {
+                    "nombre": "cardiologia"
+                },
+                "atencion": {
+                    "tipo":"diagnostico"
+                },
+                "dias_antes":5
+            },
+            {
+                "enviar_mensaje":true,
+                "especialidad": {
+                    "nombre": "cardiologia"
+                },
+                "atencion": {
+                    "tipo":"control"
+                },
+                "dias_antes":0
+            },
+            {
+                "enviar_mensaje":true,
+                "especialidad": {
+                    "nombre": "cardiologia"
+                },
+                "atencion": {
+                    "tipo":"diagnostico"
+                },
+                "dias_antes":0
+            }
+        ]
+    },
+    { 
+        "id": 4,
+        "activa":false,
+        "version":2,
+        "fecha_modificacion":"2025-05-17",
+        "regla": "dra_gomez_no_contactar",
+        "descripcion":"La doctora Gómez no quiere que contactemos a sus pacientes bajo ninguna circunstancia, ella tiene su propio sistema. Su RUT es 15678432-9, para que los filtren del sistema",
+        "institucion": {
+            "id": 2017,
+            "nombre":"Hospital Cero"
+        }, 
+        "condiciones": [
+            {
+                "enviar_mensaje":false,
+                "profesional": {
+                    "rut": "15678432-9",
+                    "apellido": "Gomez"
+                }
+            }
+        ]
+    }
+]
