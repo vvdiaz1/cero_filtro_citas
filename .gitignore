@@ -181,4 +181,4 @@ cython_debug/
 .cursorindexingignore
 
 #exclude json backup folder
-/_backup
+_backup/
