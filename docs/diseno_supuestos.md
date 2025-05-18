@@ -26,7 +26,7 @@ Para abordar este problema, se han realizado las siguientes suposiciones:
 
 - **Ejecución Diaria:** Se asume que el proceso de filtrado se ejecuta diariamente (en la madrugada del día en curso) tomando como referencia la fecha actual para evaluar condiciones basadas en la proximidad de la cita.
 
-- **Traslape de Reglas:** En caso de que una cita cumpla con múltiples reglas, la decisión de contactar (o no contactar) se basa en la existencia de al menos una regla activa con la condición de enviar_mensaje en true. Si una regla con enviar_mensaje en false se cumple, prevalece la no contactabilidad. (Esta suposición puede refinarse si se quiere una lógica de prioridad más compleja entre reglas).
+- **Traslape de Reglas:** En caso de que una cita cumpla con múltiples reglas, la decisión de contactar (o no contactar) se basa en la existencia de al menos una regla activa con la condición de enviar_mensaje en true.
 
 - **Atomicidad de las Condiciones:** Cada condición dentro de una regla se evalúa de forma independiente. Una regla se considera "cumplida" si todas las condiciones dentro de al menos uno de sus bloques de condiciones se satisfacen correctamente.
 

@@ -11,4 +11,4 @@ Para mantener la simplicidad de esta primera versión se excluyen los siguientes
   
 - Si un paciente tiene más de una cita agendada para el mismo día este será contactado para cada una de ellas, en futuras versiones podría agregarse un módulo posterior al de filtrado de citas que permita identificar si un paciente tiene más de una cita y crear un flujo alternativo de contactabilidad que incluya la información de todas las citas en un mismo contacto.
 
-
+- En el diseño actual, en caso de que una cita cumpla con múltiples reglas, la decisión de contactar (o no contactar) se basa en la existencia de al menos una regla activa con la condición de enviar_mensaje en true. Si una regla con enviar_mensaje en false se cumple, de momento no prevalece la no contactabilidad. Para una futura versión se puede agregar esta lógica para evitar contactar a pacientes que deberian excluirse.
