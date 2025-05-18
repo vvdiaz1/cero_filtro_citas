@@ -9,14 +9,14 @@ El componente "filtrar citas" debe tomar una conjunto de citas y una lista de re
 
 Este módulo fue diseñado con la capacidad de adaptar el sistema a nuevas reglas y modificaciones sin necesidad de alterar el código principal.
 
-[Link al ejercicio técnico original](/https://ceroai.notion.site/Ejercicio-Filtros-de-citas-1f12afc1c42d80bb8a04f013a5f050ed#1f12afc1c42d806a87cfd1dd7f380083)
+[Link al ejercicio técnico original](https://ceroai.notion.site/Ejercicio-Filtros-de-citas-1f12afc1c42d80bb8a04f013a5f050ed#1f12afc1c42d806a87cfd1dd7f380083)
 
 ## Documentación Adicional
 
-- [Diseño de MVE y Supuestos](/https://github.com/vvdiaz1/cero_filtro_citas/blob/main/docs/diseno_supuestos.md)
-- [Exclusiones](/https://github.com/vvdiaz1/cero_filtro_citas/blob/main/docs/exclusiones.md)
-- [Valor que Aporta la Solución](/https://github.com/vvdiaz1/cero_filtro_citas/blob/main/docs/valor.md)
-- [Parte 3 - Algunas preguntas](/https://github.com/vvdiaz1/cero_filtro_citas/blob/main/docs/preguntas.md)
+- [Diseño de MVE y Supuestos](/docs/diseno_supuestos.md)
+- [Exclusiones](https://github.com/vvdiaz1/cero_filtro_citas/blob/main/docs/exclusiones.md)
+- [Valor que Aporta la Solución](https://github.com/vvdiaz1/cero_filtro_citas/blob/main/docs/valor.md)
+- [Parte 3 - Algunas preguntas](https://github.com/vvdiaz1/cero_filtro_citas/blob/main/docs/preguntas.md)
 
 ## Pre-requisitos
 - Python 3.11+
