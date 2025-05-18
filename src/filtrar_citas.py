@@ -9,13 +9,13 @@ from typing import List, Union, Dict
 
 
 def cargar_reglas(
-        reglas_path:str =r"data\reglas.json"
+        reglas_path:str,
         )->List[Dict[str, Union[int, str, bool]]]:
     """
     Carga las reglas de negocio desde un archivo JSON
     
     Args: 
-    - reglas_path: Ruta al archivo JSON que contiene las reglas a procesar, toma por defecto la ruta data\reglas.json
+    - reglas_path: Ruta al archivo JSON que contiene las reglas a procesar
     Returns: 
         Lista de diccionarios que contienen las reglas
     """
@@ -30,13 +30,13 @@ def cargar_reglas(
         return []
 
 def cargar_citas(
-        citas_path:str =r"data\citas.json"
+        citas_path:str,
         )->List[Dict[str, Union[int, str, bool]]]:
     """
     Carga las citas consultadas desde un archivo JSON
 
     Args: 
-    - citas_path: Ruta al archivo JSON que contiene las citas consultadas, toma por defecto la ruta data\citas.json
+    - citas_path: Ruta al archivo JSON que contiene las citas consultadas
     Returns: 
         Lista de diccionarios que contienen las citas
     """

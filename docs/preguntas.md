@@ -2,41 +2,47 @@
 
 1. **Un centro médico te pide directamente con carácter urgente modificar sus políticas de contacto con pacientes de manera que entra en conflicto con tu implementación actual. ¿Cuál sería tu estrategia para abordar esta situación?**	
    
-   
-   
-- entender plazos esperados para la modificación (que es urgente)
-- evaluar de que manera entra en conflicto con la implementación
-    - falta agregar una variable por ejemplo hay que filtrar por sexo de la persona y no lo tengo contemplado en el flujo pero tengo la info y lo puedo agregar
-    - la modificacion incluye informacion que no tengo y debo realizar una integracion nueva para tenerla, es esto suficientemente rapido o debo incorporar un fix inicial trayendo la info de una forma no idea pero que funciona que luego puedo optimizar (hacemos este tipo de cosas?)
-- entender el problema mas que solo tomar el requrimiento (aplica aqui?) para ver si esta es la modificacion que hay que hacer o si es otra
+    Mi estrategia se enfocaría en una respuesta ágil y pragmática. Lo primero sería comprender la urgencia real y los plazos esperados para la implementación de esta modificación por parte del centro médico. Esta información es crucial para dimensionar el esfuerzo.
 
+    Además, se debe evaluar en detalle de qué manera específica la nueva política entra en conflicto con la implementación existente. Esto implica identificar si la modificación requiere: ajustes a la lógica de filtrado con información ya disponible (¿es posible extender la funcionalidad actual incorporando un nuevo validador de matching y actualizando las reglas?), si se requieren datos que actualmente no están disponibles (como información demográfica adicional) se debe evaluar la viabilidad y el tiempo estimado de para una nueva integración para obtener esta información. 
 
+    En estos casos, se consideraría la posibilidad de implementar un "fix" inicial que permita cumplir con la urgencia utilizando una fuente de datos alternativa o un método de obtención menos ideal pero funcional a corto plazo. Esta solución temporal debera coexistir con el desarrollo de una integración más robusta y optimizada a futuro. 
 
-1. **Necesitas comunicar ciertas restricciones técnicas a representantes institucionales sin formación tecnológica. ¿Qué métodos utilizarías para asegurar una comunicación efectiva?**
+    Lo más importante, más allá de la solicitud puntual, buscaría comprender el problema real que impulsa esta modificación. ¿Es un cambio en un protocolo médico específico? ¿Una respuesta a la retroalimentación de los pacientes? Entender el contexto podría ayudar a ver si la solución propuesta es la más adecuada o si existen alternativas más eficientes o que aporten mayor valor a largo plazo.
    
-- primero que nada es importante entender el contexto del publico al que me dirijo, que conocimiento del problema tienen estos representantes institucionales son los stakeholders tipo directorio o es alguien no tecnico que esta en la operacion
-- teniendo lo anterior en consideración hay que ver el mejor camino, idealmente tener una presentacion con slides tipo demo o algun diagrama que muestre el flujo y el punto donde esta el problema
-- son estas restricciones tecnicas solucionables de alguna manera, de ser asi tenemos una propuesta de como resolverlas o alguna propuesta de que SI se puede entregar dado el problema actual (hay un punto medio que funcione para ambas partes?)
-- siempre tiene que haber una propuesta final de solucion no puede cerrarse con NO se puede hacer
-- hacer chequeo de la comprension, sobretodo con partes no tecnicas confirmar que entendieron de lo que estamos proponiendo o discutiendo (estamos hablando de lo mismo?)
-- AGREGAR chequeo de gemini de si esta cumpliendo con la parte de metodos
+
+2. **Necesitas comunicar ciertas restricciones técnicas a representantes institucionales sin formación tecnológica. ¿Qué métodos utilizarías para asegurar una comunicación efectiva?**
+
+    Mi estrategia en este caso, se centraría en adaptar el mensaje al contexto de la audiencia. Inicialmente, buscaría comprender el nivel de conocimiento técnico de estos representantes y su involucramiento con el problema, diferenciando entre stakeholders de alto nivel o personal operativo no técnico. 
+
+    Teniendo esto en consideración, el método principal sería la utilización de una presentación visual clara y concisa (apoyándome en slides, demos o un diagramas que ilustren el proceso). Con el fin de señalar específicamente dónde radica la restricción técnica, evitando la vocabulario técnico. Un punto clave sería explorar si estas restricciones son inherentemente limitantes o si existen alternativas o soluciones posibles. 
+
+    En caso de haber opciones, presentar una propuesta clara de cómo se podrían resolver o, en su defecto, qué se puede entregar dentro de las limitaciones actuales, buscando un punto medio que funcione para ambas partes. Es fundamental que la comunicación finalize siempre en una propuesta de solución, evitando un simple "no se puede hacer".
+
+    Además, para asegurar la comprensión, realizaría chequeos constantes preguntando directamente y reformulando los puntos clave, confirmando que el mensaje ha sido recibido y entendido correctamente por los representantes institucionales.
 
 3. **Ante la llegada simultánea de varias peticiones de modificación procedentes de distintas instituciones, ¿qué criterios aplicarías para establecer prioridades y cómo comunicarías estas decisiones?**
 
-- cual es la percepcion del cliente sobre la solicitud, siente que es algo que esta fallando o es algo que quiere agregar a lo que ya tiene (es un nice to have o un must)
-- que tan relevante es esta modificacion para la operacion del cliente, esto le genera algun problema en su operacion diaria que debera solucionar de otra forma hasta que este listo (cual es el impacto que tiene no tener esto para el cliente)
-- es un cliente que ya tiene otras solicitudes en curso? es esta mas importante que las demas? algunas de las otras esta lista o se podra entregar pronto (podemos tener algun quick win con algo ademas de esto?
-- cual es el valor del cliente para Cero, es un cliente importante o clave al que hay que darle atencion prioritaria
-- algunas de las modificaciones se pueden “juntar” y resolver con solo una solucion, si es asi alguna de ellas esta mas arriba en la lista de prioridades segun los otros puntos
+    En este caso aplicaría una serie de criterios para establecer prioridades de manera objetiva y transparente. 
 
-como comunicar
+    En primer lugar, evaluaría la percepción del cliente sobre la solicitud, distinguiendo si se trata de la corrección de una funcionalidad defectuosa o de una mejora adicional a lo ya existente, priorizando las primeras.
 
-- siempre se claro con los plazos, no se puede ser vago en la respuesta, dar updates del estado de la modificacion para que sepa que se esta avanzando si es algo que toma mucho tiempo
-- mensajes para el cliente: me importas, evalue esto con responsabilidad y llegue a esta conclusion; quiero entregarte la mejor solucion y bien hecha (eso puede necesitar tiempo del equipo o que pueda estar disponible full para esto y que eso no sea ahora)
+    Luego, evaluaría la relevancia de la modificación para la operación del cliente, identificando el impacto que la no implementación inmediata tendría en su funcionamiento diario y si existen soluciones alternativas temporales, considerando el contexto de otras solicitudes en curso para el mismo cliente, evaluando la importancia relativa de la nueva petición y la proximidad de la entrega de otras funcionalidades, buscando posibles "quick wins". 
+
+    El valor estratégico del cliente para Cero sería otro criterio importante, dando prioridad a aquellos clientes clave. 
+
+    Finalmente, analizaría si algunas modificaciones pueden consolidarse en una única solución, priorizando aquellas que resuelvan múltiples necesidades al mismo tiempo.
+
+    La comunicación de estas decisiones se basaría en la claridad y la transparencia en los plazos, evitando respuestas vagas y proporcionando actualizaciones regulares sobre el estado de cada solicitud. El foco sería que el mensaje transmitido deje clara la importancia que se le otorga, la evaluación responsable de su petición y el compromiso de entregar la mejor solución posible, aunque esto pueda requerir tiempo y una dedicación específica del equipo, explicando las posibles limitaciones de recursos o la necesidad de una planificación cuidadosa.
 
 4. **Has identificado que una institución proporciona datos en formatos inconsistentes, provocando errores intermitentes en tu sistema de filtrado. ¿Qué proceso seguirías para identificar el origen del problema y desarrollar una solución adecuada?**
 
-- ir desde el punto en que se estan generando lo problemas hacia atras, es algo del modulo de consultar citas lo que genera la inconsistencia? o es el sistema de origen el que trae formatos inconsistentes
-- si el problema es el modulo de consultar citas revisar como puedo agregar una capa adicional que asegure el formato de output fijo
-- si es el sistema de origen, se puede sacar la información de algun otro lado donde pueda asegurar que esto no pasa? se puede modificar algo de ese sistema de manera “facil” para asegurar el formato?
-- si no se puede hacer desde el sistema que envia los datos, agregar una capa de limpieza o normalizacion de los datos en mi ELT/ETL antes de proceder con el filtrado, tengo manera de captar todas las desviaciones de formato o quedaran citas que no puedo procesar sin agregar info adicional o modificando el origen de la ingesta
+    En este caso, lo principal seria identificar la raíz del problema y desarrollar una solución adecuada. Lo primero sería rastrear el origen de los errores, investigando si la inconsistencia se introduce en el módulo de "consultar citas" o si ya existe en los datos proporcionados por el sistema de origen de la institución.
+
+    Si la inconsistencia se origina en el módulo de "consultar citas", exploraría la implementación de una capa adicional de validación y transformación para asegurar un formato de salida uniforme y estandarizado. 
+
+    Por otro lado, si el problema se encuentra en el sistema de origen, evaluaría la posibilidad de obtener la información desde una fuente alternativa dentro de la misma institución que garantice mayor consistencia, o en su defecto evaluar la viabilidad de solicitar modificaciones en el sistema de origen para estandarizar el formato de los datos, considerando la complejidad y los recursos necesarios para ello.
+
+    En el caso de que no sea posible asegurar la consistencia desde el origen, implementaría una capa robusta de limpieza y normalización de datos como parte del proceso de ingesta previo al filtrado, considerarndo las diferentes variaciones de formato para diseñar reglas de transformación que abarquen la mayor cantidad de las inconsistencias posibles. Sin embargo, consideraría la posibilidad de que persistan casos atípicos que requieran un manejo especial o que impidan el procesamiento de ciertas citas sin información adicional. 
+
+    En cualquiera de los casos, el objetivo sería minimizar los errores y asegurar la mayor cobertura posible en el procesamiento de las citas, documentando y transparentando al cliente cualquier limitación o posible pérdida de información debido a las inconsistencias en los datos de origen.
