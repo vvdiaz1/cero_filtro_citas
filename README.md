@@ -14,9 +14,9 @@ Este módulo fue diseñado con la capacidad de adaptar el sistema a nuevas regla
 ## Documentación Adicional
 
 - [Diseño de MVE y Supuestos](/docs/diseno_supuestos.md)
-- [Exclusiones](https://github.com/vvdiaz1/cero_filtro_citas/blob/main/docs/exclusiones.md)
-- [Valor que Aporta la Solución](https://github.com/vvdiaz1/cero_filtro_citas/blob/main/docs/valor.md)
-- [Parte 3 - Algunas preguntas](https://github.com/vvdiaz1/cero_filtro_citas/blob/main/docs/preguntas.md)
+- [Exclusiones](/docs/exclusiones.md)
+- [Valor que Aporta la Solución](/docs/valor.md)
+- [Parte 3 - Algunas preguntas](/docs/preguntas.md)
 
 ## Pre-requisitos
 - Python 3.11+
