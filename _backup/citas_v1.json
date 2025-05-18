@@ -1,0 +1,1220 @@
+[
+   {
+      "id": 14338,
+      "extraction_timestamp": "2025-05-16 12:23",
+      "fecha_hora": "2025-05-27 17:15",
+      "atencion": {
+         "id": 2,
+         "tipo": "control",
+         "lista": "lista de espera",
+         "categoria": "cita medica"
+      },
+      "unidad_medica": {
+         "id": 30,
+         "nombre": "Edificio B"
+      },
+      "estado": {
+         "id": 1,
+         "nombre": "agendada"
+      },
+      "profesional": {
+         "id": 192,
+         "rut": "5987654-K",
+         "nombre": "Luis Alberto",
+         "apellido": "Martinez",
+         "especialidad": {
+            "id": 3,
+            "nombre": "cardiologia"
+         },
+         "institucion": {
+            "id": 2017,
+            "nombre": "Hospital Cero"
+         }
+      },
+      "paciente": {
+         "id": 1516,
+         "rut": "10567890-1",
+         "nombre": "Cristobal",
+         "apellido": "Soto",
+         "sexo": "M",
+         "fecha_nacimiento": "1954-10-04",
+         "telefono": 56967808123
+      }
+   },
+   {
+      "id": 14372,
+      "extraction_timestamp": "2025-05-16 12:23",
+      "fecha_hora": "2025-05-27 17:15",
+      "atencion": {
+         "id": 2,
+         "tipo": "control",
+         "lista": "lista normal",
+         "categoria": "cita medica"
+      },
+      "unidad_medica": {
+         "id": 50,
+         "nombre": "Edificio A - Consultas"
+      },
+      "estado": {
+         "id": 3,
+         "nombre": "cancelada"
+      },
+      "profesional": {
+         "id": 141,
+         "rut": "15678432-9",
+         "nombre": "Sofia",
+         "apellido": "Gomez",
+         "especialidad": {
+            "id": 5,
+            "nombre": "gastroenterologia"
+         },
+         "institucion": {
+            "id": 2017,
+            "nombre": "Hospital Cero"
+         }
+      },
+      "paciente": {
+         "id": 2580,
+         "rut": "20345678-9",
+         "nombre": "Diego",
+         "apellido": "Morales",
+         "sexo": "M",
+         "fecha_nacimiento": "1952-07-19",
+         "telefono": 56781012345
+      }
+   },
+   {
+      "id": 14923,
+      "extraction_timestamp": "2025-05-16 12:23",
+      "fecha_hora": "2025-05-27 16:15",
+      "atencion": {
+         "id": 2,
+         "tipo": "control",
+         "lista": "lista normal",
+         "categoria": "cita medica"
+      },
+      "unidad_medica": {
+         "id": 20,
+         "nombre": "Edificio D"
+      },
+      "estado": {
+         "id": 1,
+         "nombre": "agendada"
+      },
+      "profesional": {
+         "id": 152,
+         "rut": "9876543-2",
+         "nombre": "Juan Carlos",
+         "apellido": "Soto",
+         "especialidad": {
+            "id": 2,
+            "nombre": "pedriatria"
+         },
+         "institucion": {
+            "id": 2017,
+            "nombre": "Hospital Cero"
+         }
+      },
+      "paciente": {
+         "id": 2534,
+         "rut": "21567890-3",
+         "nombre": "Mateo",
+         "apellido": "Vargas",
+         "sexo": "M",
+         "fecha_nacimiento": "2020-04-07",
+         "telefono": 56988990011
+      }
+   },
+   {
+      "id": 14357,
+      "extraction_timestamp": "2025-05-16 12:23",
+      "fecha_hora": "2025-05-27 12:30",
+      "atencion": {
+         "id": 2,
+         "tipo": "control",
+         "lista": "lista normal",
+         "categoria": "cita medica"
+      },
+      "unidad_medica": {
+         "id": 40,
+         "nombre": "Edificio C"
+      },
+      "estado": {
+         "id": 1,
+         "nombre": "agendada"
+      },
+      "profesional": {
+         "id": 146,
+         "rut": "18345678-9",
+         "nombre": "Pedro",
+         "apellido": "Fernandez",
+         "especialidad": {
+            "id": 4,
+            "nombre": "cardiologia"
+         },
+         "institucion": {
+            "id": 2017,
+            "nombre": "Hospital Cero"
+         }
+      },
+      "paciente": {
+         "id": 2272,
+         "rut": "14901234-5",
+         "nombre": "Nicolas",
+         "apellido": "Gonzalez",
+         "sexo": "M",
+         "fecha_nacimiento": "2002-12-09",
+         "telefono": 56990123456
+      }
+   },
+   {
+      "id": 14497,
+      "extraction_timestamp": "2025-05-16 12:23",
+      "fecha_hora": "2025-05-27 11:30",
+      "atencion": {
+         "id": 3,
+         "tipo": "diagnostico",
+         "lista": "lista normal",
+         "categoria": "cita medica"
+      },
+      "unidad_medica": {
+         "id": 10,
+         "nombre": "Policlinico Odontologia"
+      },
+      "estado": {
+         "id": 3,
+         "nombre": "cancelada"
+      },
+      "profesional": {
+         "id": 199,
+         "rut": "13123456-7",
+         "nombre": "Ana Maria",
+         "apellido": "Perez",
+         "especialidad": {
+            "id": 1,
+            "nombre": "odontologia"
+         },
+         "institucion": {
+            "id": 2017,
+            "nombre": "Hospital Cero"
+         }
+      },
+      "paciente": {
+         "id": 2228,
+         "rut": "12567890-1",
+         "nombre": "Carlos",
+         "apellido": "Diaz",
+         "sexo": "M",
+         "fecha_nacimiento": "1991-04-16",
+         "telefono": 56955667788
+      }
+   },
+   {
+      "id": 14234,
+      "extraction_timestamp": "2025-05-16 12:23",
+      "fecha_hora": "2025-05-27 11:00",
+      "atencion": {
+         "id": 2,
+         "tipo": "control",
+         "lista": "lista de espera",
+         "categoria": "cita medica"
+      },
+      "unidad_medica": {
+         "id": 40,
+         "nombre": "Edificio C"
+      },
+      "estado": {
+         "id": 1,
+         "nombre": "agendada"
+      },
+      "profesional": {
+         "id": 146,
+         "rut": "18345678-9",
+         "nombre": "Pedro",
+         "apellido": "Fernandez",
+         "especialidad": {
+            "id": 4,
+            "nombre": "cardiologia"
+         },
+         "institucion": {
+            "id": 2017,
+            "nombre": "Hospital Cero"
+         }
+      },
+      "paciente": {
+         "id": 1516,
+         "rut": "10567890-1",
+         "nombre": "Cristobal",
+         "apellido": "Soto",
+         "sexo": "M",
+         "fecha_nacimiento": "1954-10-04",
+         "telefono": 56967808123
+      }
+   },
+   {
+      "id": 14146,
+      "extraction_timestamp": "2025-05-16 12:23",
+      "fecha_hora": "2025-05-27 10:15",
+      "atencion": {
+         "id": 2,
+         "tipo": "control",
+         "lista": "lista de espera",
+         "categoria": "cita medica"
+      },
+      "unidad_medica": {
+         "id": 10,
+         "nombre": "Policlinico Odontologia"
+      },
+      "estado": {
+         "id": 1,
+         "nombre": "agendada"
+      },
+      "profesional": {
+         "id": 199,
+         "rut": "13123456-7",
+         "nombre": "Ana Maria",
+         "apellido": "Perez",
+         "especialidad": {
+            "id": 1,
+            "nombre": "odontologia"
+         },
+         "institucion": {
+            "id": 2017,
+            "nombre": "Hospital Cero"
+         }
+      },
+      "paciente": {
+         "id": 2417,
+         "rut": "15012345-6",
+         "nombre": "Isidora",
+         "apellido": "Vargas",
+         "sexo": "F",
+         "fecha_nacimiento": "2014-11-09",
+         "telefono": 56980123457
+      }
+   },
+   {
+      "id": 14096,
+      "extraction_timestamp": "2025-05-16 12:23",
+      "fecha_hora": "2025-05-26 12:15",
+      "atencion": {
+         "id": 2,
+         "tipo": "control",
+         "lista": "lista normal",
+         "categoria": "cita medica"
+      },
+      "unidad_medica": {
+         "id": 50,
+         "nombre": "Edificio A - Consultas"
+      },
+      "estado": {
+         "id": 1,
+         "nombre": "agendada"
+      },
+      "profesional": {
+         "id": 141,
+         "rut": "15678432-9",
+         "nombre": "Sofia",
+         "apellido": "Gomez",
+         "especialidad": {
+            "id": 5,
+            "nombre": "gastroenterologia"
+         },
+         "institucion": {
+            "id": 2017,
+            "nombre": "Hospital Cero"
+         }
+      },
+      "paciente": {
+         "id": 2938,
+         "rut": "19234567-8",
+         "nombre": "Constanza",
+         "apellido": "Nu\u00f1ez",
+         "sexo": "F",
+         "fecha_nacimiento": "1964-10-02",
+         "telefono": 56967890123
+      }
+   },
+   {
+      "id": 14055,
+      "extraction_timestamp": "2025-05-16 12:23",
+      "fecha_hora": "2025-05-26 11:45",
+      "atencion": {
+         "id": 3,
+         "tipo": "diagnostico",
+         "lista": "lista normal",
+         "categoria": "cita medica"
+      },
+      "unidad_medica": {
+         "id": 30,
+         "nombre": "Edificio B"
+      },
+      "estado": {
+         "id": 1,
+         "nombre": "agendada"
+      },
+      "profesional": {
+         "id": 192,
+         "rut": "5987654-K",
+         "nombre": "Luis Alberto",
+         "apellido": "Martinez",
+         "especialidad": {
+            "id": 3,
+            "nombre": "cardiologia"
+         },
+         "institucion": {
+            "id": 2017,
+            "nombre": "Hospital Cero"
+         }
+      },
+      "paciente": {
+         "id": 1634,
+         "rut": "16901234-5",
+         "nombre": "Tomas",
+         "apellido": "Castro",
+         "sexo": "M",
+         "fecha_nacimiento": "1963-07-17",
+         "telefono": 56966568899
+      }
+   },
+   {
+      "id": 14155,
+      "extraction_timestamp": "2025-05-16 12:23",
+      "fecha_hora": "2025-05-26 10:30",
+      "atencion": {
+         "id": 2,
+         "tipo": "control",
+         "lista": "lista normal",
+         "categoria": "cita medica"
+      },
+      "unidad_medica": {
+         "id": 30,
+         "nombre": "Edificio B"
+      },
+      "estado": {
+         "id": 1,
+         "nombre": "agendada"
+      },
+      "profesional": {
+         "id": 192,
+         "rut": "5987654-K",
+         "nombre": "Luis Alberto",
+         "apellido": "Martinez",
+         "especialidad": {
+            "id": 3,
+            "nombre": "cardiologia"
+         },
+         "institucion": {
+            "id": 2017,
+            "nombre": "Hospital Cero"
+         }
+      },
+      "paciente": {
+         "id": 2835,
+         "rut": "11456789-0",
+         "nombre": "Javiera",
+         "apellido": "Rojas",
+         "sexo": "F",
+         "fecha_nacimiento": "1967-02-12",
+         "telefono": 56978901234
+      }
+   },
+   {
+      "id": 14972,
+      "extraction_timestamp": "2025-05-16 12:23",
+      "fecha_hora": "2025-05-26 09:15",
+      "atencion": {
+         "id": 2,
+         "tipo": "control",
+         "lista": "lista normal",
+         "categoria": "cita medica"
+      },
+      "unidad_medica": {
+         "id": 30,
+         "nombre": "Edificio B"
+      },
+      "estado": {
+         "id": 3,
+         "nombre": "cancelada"
+      },
+      "profesional": {
+         "id": 192,
+         "rut": "5987654-K",
+         "nombre": "Luis Alberto",
+         "apellido": "Martinez",
+         "especialidad": {
+            "id": 3,
+            "nombre": "cardiologia"
+         },
+         "institucion": {
+            "id": 2017,
+            "nombre": "Hospital Cero"
+         }
+      },
+      "paciente": {
+         "id": 2720,
+         "rut": "14789012-3",
+         "nombre": "Sebastian",
+         "apellido": "Lopez",
+         "sexo": "M",
+         "fecha_nacimiento": "1965-03-14",
+         "telefono": 56945678901
+      }
+   },
+   {
+      "id": 14933,
+      "extraction_timestamp": "2025-05-16 12:23",
+      "fecha_hora": "2025-05-22 09:00",
+      "atencion": {
+         "id": 3,
+         "tipo": "diagnostico",
+         "lista": "lista de espera",
+         "categoria": "cita medica"
+      },
+      "unidad_medica": {
+         "id": 30,
+         "nombre": "Edificio B"
+      },
+      "estado": {
+         "id": 1,
+         "nombre": "agendada"
+      },
+      "profesional": {
+         "id": 192,
+         "rut": "5987654-K",
+         "nombre": "Luis Alberto",
+         "apellido": "Martinez",
+         "especialidad": {
+            "id": 3,
+            "nombre": "cardiologia"
+         },
+         "institucion": {
+            "id": 2017,
+            "nombre": "Hospital Cero"
+         }
+      },
+      "paciente": {
+         "id": 2131,
+         "rut": "10345678-9",
+         "nombre": "Martin",
+         "apellido": "Perez",
+         "sexo": "M",
+         "fecha_nacimiento": "1972-10-03",
+         "telefono": 56944556677
+      }
+   },
+   {
+      "id": 14100,
+      "extraction_timestamp": "2025-05-16 12:23",
+      "fecha_hora": "2025-05-25 09:15",
+      "atencion": {
+         "id": 2,
+         "tipo": "control",
+         "lista": "lista normal",
+         "categoria": "cita medica"
+      },
+      "unidad_medica": {
+         "id": 40,
+         "nombre": "Edificio C"
+      },
+      "estado": {
+         "id": 1,
+         "nombre": "agendada"
+      },
+      "profesional": {
+         "id": 146,
+         "rut": "18345678-9",
+         "nombre": "Pedro",
+         "apellido": "Fernandez",
+         "especialidad": {
+            "id": 4,
+            "nombre": "cardiologia"
+         },
+         "institucion": {
+            "id": 2017,
+            "nombre": "Hospital Cero"
+         }
+      },
+      "paciente": {
+         "id": 2504,
+         "rut": "15890123-K",
+         "nombre": "Isidora",
+         "apellido": "Gutierrez",
+         "sexo": "F",
+         "fecha_nacimiento": "1979-02-18",
+         "telefono": 56977889900
+      }
+   },
+   {
+      "id": 14598,
+      "extraction_timestamp": "2025-05-16 12:23",
+      "fecha_hora": "2025-05-25 09:00",
+      "atencion": {
+         "id": 2,
+         "tipo": "control",
+         "lista": "lista normal",
+         "categoria": "cita medica"
+      },
+      "unidad_medica": {
+         "id": 10,
+         "nombre": "Policlinico Odontologia"
+      },
+      "estado": {
+         "id": 1,
+         "nombre": "agendada"
+      },
+      "profesional": {
+         "id": 199,
+         "rut": "13123456-7",
+         "nombre": "Ana Maria",
+         "apellido": "Perez",
+         "especialidad": {
+            "id": 1,
+            "nombre": "odontologia"
+         },
+         "institucion": {
+            "id": 2017,
+            "nombre": "Hospital Cero"
+         }
+      },
+      "paciente": {
+         "id": 1828,
+         "rut": "11678901-2",
+         "nombre": "Florencia",
+         "apellido": "Valenzuela",
+         "sexo": "F",
+         "fecha_nacimiento": "1973-11-05",
+         "telefono": 56922334455
+      }
+   },
+   {
+      "id": 14383,
+      "extraction_timestamp": "2025-05-16 12:23",
+      "fecha_hora": "2025-05-24 17:15",
+      "atencion": {
+         "id": 2,
+         "tipo": "control",
+         "lista": "lista normal",
+         "categoria": "cita medica"
+      },
+      "unidad_medica": {
+         "id": 10,
+         "nombre": "Policlinico Odontologia"
+      },
+      "estado": {
+         "id": 1,
+         "nombre": "agendada"
+      },
+      "profesional": {
+         "id": 199,
+         "rut": "13123456-7",
+         "nombre": "Ana Maria",
+         "apellido": "Perez",
+         "especialidad": {
+            "id": 1,
+            "nombre": "odontologia"
+         },
+         "institucion": {
+            "id": 2017,
+            "nombre": "Hospital Cero"
+         }
+      },
+      "paciente": {
+         "id": 1864,
+         "rut": "12789012-3",
+         "nombre": "Gabriel",
+         "apellido": "Ruiz",
+         "sexo": "M",
+         "fecha_nacimiento": "1985-06-06",
+         "telefono": 56989012345
+      }
+   },
+   {
+      "id": 14905,
+      "extraction_timestamp": "2025-05-16 12:23",
+      "fecha_hora": "2025-05-24 17:00",
+      "atencion": {
+         "id": 2,
+         "tipo": "control",
+         "lista": "lista de espera",
+         "categoria": "cita medica"
+      },
+      "unidad_medica": {
+         "id": 50,
+         "nombre": "Edificio A - Consultas"
+      },
+      "estado": {
+         "id": 1,
+         "nombre": "agendada"
+      },
+      "profesional": {
+         "id": 141,
+         "rut": "15678432-9",
+         "nombre": "Sofia",
+         "apellido": "Gomez",
+         "especialidad": {
+            "id": 5,
+            "nombre": "gastroenterologia"
+         },
+         "institucion": {
+            "id": 2017,
+            "nombre": "Hospital Cero"
+         }
+      },
+      "paciente": {
+         "id": 2841,
+         "rut": "18123456-7",
+         "nombre": "Vicente",
+         "apellido": "Herrera",
+         "sexo": "M",
+         "fecha_nacimiento": "1984-04-26",
+         "telefono": 56934567890
+      }
+   },
+   {
+      "id": 14834,
+      "extraction_timestamp": "2025-05-16 12:23",
+      "fecha_hora": "2025-05-24 15:00",
+      "atencion": {
+         "id": 1,
+         "tipo": "examen",
+         "lista": "lista normal",
+         "categoria": "examen"
+      },
+      "unidad_medica": {
+         "id": 60,
+         "nombre": "Edificio A - Examenes"
+      },
+      "estado": {
+         "id": 1,
+         "nombre": "agendada"
+      },
+      "profesional": {
+         "id": 200,
+         "rut": "12345678-0",
+         "nombre": "Elena",
+         "apellido": "Rodriguez",
+         "especialidad": {
+            "id": 6,
+            "nombre": "examen"
+         },
+         "institucion": {
+            "id": 2017,
+            "nombre": "Hospital Cero"
+         }
+      },
+      "paciente": {
+         "id": 2534,
+         "rut": "21567890-3",
+         "nombre": "Mateo",
+         "apellido": "Vargas",
+         "sexo": "M",
+         "fecha_nacimiento": "2020-04-07",
+         "telefono": 56988990011
+      }
+   },
+   {
+      "id": 14574,
+      "extraction_timestamp": "2025-05-16 12:23",
+      "fecha_hora": "2025-05-23 18:45",
+      "atencion": {
+         "id": 1,
+         "tipo": "examen",
+         "lista": "lista normal",
+         "categoria": "examen"
+      },
+      "unidad_medica": {
+         "id": 60,
+         "nombre": "Edificio A - Examenes"
+      },
+      "estado": {
+         "id": 1,
+         "nombre": "agendada"
+      },
+      "profesional": {
+         "id": 200,
+         "rut": "12345678-0",
+         "nombre": "Elena",
+         "apellido": "Rodriguez",
+         "especialidad": {
+            "id": 6,
+            "nombre": "examen"
+         },
+         "institucion": {
+            "id": 2017,
+            "nombre": "Hospital Cero"
+         }
+      },
+      "paciente": {
+         "id": 2574,
+         "rut": "13678901-2",
+         "nombre": "Valentina",
+         "apellido": "Silva",
+         "sexo": "F",
+         "fecha_nacimiento": "1988-03-28",
+         "telefono": 56923456789
+      }
+   },
+   {
+      "id": 14124,
+      "extraction_timestamp": "2025-05-16 12:23",
+      "fecha_hora": "2025-05-23 15:00",
+      "atencion": {
+         "id": 2,
+         "tipo": "control",
+         "lista": "lista normal",
+         "categoria": "cita medica"
+      },
+      "unidad_medica": {
+         "id": 20,
+         "nombre": "Edificio D"
+      },
+      "estado": {
+         "id": 3,
+         "nombre": "cancelada"
+      },
+      "profesional": {
+         "id": 152,
+         "rut": "9876543-2",
+         "nombre": "Juan Carlos",
+         "apellido": "Soto",
+         "especialidad": {
+            "id": 2,
+            "nombre": "pedriatria"
+         },
+         "institucion": {
+            "id": 2017,
+            "nombre": "Hospital Cero"
+         }
+      },
+      "paciente": {
+         "id": 2849,
+         "rut": "23234567-8",
+         "nombre": "Emilia",
+         "apellido": "Gonzalez",
+         "sexo": "F",
+         "fecha_nacimiento": "2017-01-22",
+         "telefono": 56912345678
+      }
+   },
+   {
+      "id": 14298,
+      "extraction_timestamp": "2025-05-16 12:23",
+      "fecha_hora": "2025-05-23 14:45",
+      "atencion": {
+         "id": 3,
+         "tipo": "diagnostico",
+         "lista": "lista normal",
+         "categoria": "cita medica"
+      },
+      "unidad_medica": {
+         "id": 40,
+         "nombre": "Edificio C"
+      },
+      "estado": {
+         "id": 1,
+         "nombre": "agendada"
+      },
+      "profesional": {
+         "id": 146,
+         "rut": "18345678-9",
+         "nombre": "Pedro",
+         "apellido": "Fernandez",
+         "especialidad": {
+            "id": 4,
+            "nombre": "cardiologia"
+         },
+         "institucion": {
+            "id": 2017,
+            "nombre": "Hospital Cero"
+         }
+      },
+      "paciente": {
+         "id": 2217,
+         "rut": "17012345-6",
+         "nombre": "Amanda",
+         "apellido": "Fernandez",
+         "sexo": "F",
+         "fecha_nacimiento": "1994-06-25",
+         "telefono": 56956789012
+      }
+   },
+   {
+      "id": 14726,
+      "extraction_timestamp": "2025-05-16 12:23",
+      "fecha_hora": "2025-05-21 12:45",
+      "atencion": {
+         "id": 3,
+         "tipo": "diagnostico",
+         "lista": "lista de espera",
+         "categoria": "cita medica"
+      },
+      "unidad_medica": {
+         "id": 30,
+         "nombre": "Edificio B"
+      },
+      "estado": {
+         "id": 1,
+         "nombre": "agendada"
+      },
+      "profesional": {
+         "id": 192,
+         "rut": "5987654-K",
+         "nombre": "Luis Alberto",
+         "apellido": "Martinez",
+         "especialidad": {
+            "id": 3,
+            "nombre": "cardiologia"
+         },
+         "institucion": {
+            "id": 2017,
+            "nombre": "Hospital Cero"
+         }
+      },
+      "paciente": {
+         "id": 2231,
+         "rut": "21456789-0",
+         "nombre": "Antonia",
+         "apellido": "Romero",
+         "sexo": "F",
+         "fecha_nacimiento": "1993-09-26",
+         "telefono": 56966778899
+      }
+   },
+   {
+      "id": 14517,
+      "extraction_timestamp": "2025-05-16 12:23",
+      "fecha_hora": "2025-05-23 11:00",
+      "atencion": {
+         "id": 3,
+         "tipo": "diagnostico",
+         "lista": "lista normal",
+         "categoria": "cita medica"
+      },
+      "unidad_medica": {
+         "id": 10,
+         "nombre": "Policlinico Odontologia"
+      },
+      "estado": {
+         "id": 1,
+         "nombre": "agendada"
+      },
+      "profesional": {
+         "id": 199,
+         "rut": "13123456-7",
+         "nombre": "Ana Maria",
+         "apellido": "Perez",
+         "especialidad": {
+            "id": 1,
+            "nombre": "odontologia"
+         },
+         "institucion": {
+            "id": 2017,
+            "nombre": "Hospital Cero"
+         }
+      },
+      "paciente": {
+         "id": 2228,
+         "rut": "12567890-1",
+         "nombre": "Carlos",
+         "apellido": "Diaz",
+         "sexo": "M",
+         "fecha_nacimiento": "1991-04-16",
+         "telefono": 56955667788
+      }
+   },
+   {
+      "id": 14173,
+      "extraction_timestamp": "2025-05-16 12:23",
+      "fecha_hora": "2025-05-22 15:15",
+      "atencion": {
+         "id": 3,
+         "tipo": "diagnostico",
+         "lista": "lista normal",
+         "categoria": "cita medica"
+      },
+      "unidad_medica": {
+         "id": 20,
+         "nombre": "Edificio D"
+      },
+      "estado": {
+         "id": 1,
+         "nombre": "agendada"
+      },
+      "profesional": {
+         "id": 152,
+         "rut": "9876543-2",
+         "nombre": "Juan Carlos",
+         "apellido": "Soto",
+         "especialidad": {
+            "id": 2,
+            "nombre": "pedriatria"
+         },
+         "institucion": {
+            "id": 2017,
+            "nombre": "Hospital Cero"
+         }
+      },
+      "paciente": {
+         "id": 2407,
+         "rut": "22123456-K",
+         "nombre": "Benjamin",
+         "apellido": "Soto",
+         "sexo": "M",
+         "fecha_nacimiento": "2018-03-14",
+         "telefono": 56998765432
+      }
+   },
+   {
+      "id": 14334,
+      "extraction_timestamp": "2025-05-16 12:23",
+      "fecha_hora": "2025-05-22 11:45",
+      "atencion": {
+         "id": 1,
+         "tipo": "examen",
+         "lista": "lista normal",
+         "categoria": "examen"
+      },
+      "unidad_medica": {
+         "id": 60,
+         "nombre": "Edificio A - Examenes"
+      },
+      "estado": {
+         "id": 1,
+         "nombre": "agendada"
+      },
+      "profesional": {
+         "id": 200,
+         "rut": "12345678-0",
+         "nombre": "Elena",
+         "apellido": "Rodriguez",
+         "especialidad": {
+            "id": 6,
+            "nombre": "examen"
+         },
+         "institucion": {
+            "id": 2017,
+            "nombre": "Hospital Cero"
+         }
+      },
+      "paciente": {
+         "id": 1925,
+         "rut": "13890123-4",
+         "nombre": "Martina",
+         "apellido": "Perez",
+         "sexo": "F",
+         "fecha_nacimiento": "2001-11-10",
+         "telefono": 56911223344
+      }
+   },
+   {
+      "id": 14175,
+      "extraction_timestamp": "2025-05-16 12:23",
+      "fecha_hora": "2025-05-22 11:30",
+      "atencion": {
+         "id": 3,
+         "tipo": "diagnostico",
+         "lista": "lista normal",
+         "categoria": "cita medica"
+      },
+      "unidad_medica": {
+         "id": 20,
+         "nombre": "Edificio D"
+      },
+      "estado": {
+         "id": 1,
+         "nombre": "agendada"
+      },
+      "profesional": {
+         "id": 152,
+         "rut": "9876543-2",
+         "nombre": "Juan Carlos",
+         "apellido": "Soto",
+         "especialidad": {
+            "id": 2,
+            "nombre": "pedriatria"
+         },
+         "institucion": {
+            "id": 2017,
+            "nombre": "Hospital Cero"
+         }
+      },
+      "paciente": {
+         "id": 2534,
+         "rut": "21567890-3",
+         "nombre": "Mateo",
+         "apellido": "Vargas",
+         "sexo": "M",
+         "fecha_nacimiento": "2020-04-07",
+         "telefono": 56988990011
+      }
+   },
+   {
+      "id": 14083,
+      "extraction_timestamp": "2025-05-16 12:23",
+      "fecha_hora": "2025-05-21 17:15",
+      "atencion": {
+         "id": 2,
+         "tipo": "control",
+         "lista": "lista normal",
+         "categoria": "cita medica"
+      },
+      "unidad_medica": {
+         "id": 30,
+         "nombre": "Edificio B"
+      },
+      "estado": {
+         "id": 4,
+         "nombre": "realizada"
+      },
+      "profesional": {
+         "id": 192,
+         "rut": "5987654-K",
+         "nombre": "Luis Alberto",
+         "apellido": "Martinez",
+         "especialidad": {
+            "id": 3,
+            "nombre": "cardiologia"
+         },
+         "institucion": {
+            "id": 2017,
+            "nombre": "Hospital Cero"
+         }
+      },
+      "paciente": {
+         "id": 2201,
+         "rut": "21123456-7",
+         "nombre": "Benjamin",
+         "apellido": "Flores",
+         "sexo": "M",
+         "fecha_nacimiento": "2017-12-13",
+         "telefono": 56970123458
+      }
+   },
+   {
+      "id": 14012,
+      "extraction_timestamp": "2025-05-16 12:23",
+      "fecha_hora": "2025-05-21 12:15",
+      "atencion": {
+         "id": 3,
+         "tipo": "diagnostico",
+         "lista": "lista normal",
+         "categoria": "cita medica"
+      },
+      "unidad_medica": {
+         "id": 20,
+         "nombre": "Edificio D"
+      },
+      "estado": {
+         "id": 1,
+         "nombre": "agendada"
+      },
+      "profesional": {
+         "id": 152,
+         "rut": "9876543-2",
+         "nombre": "Juan Carlos",
+         "apellido": "Soto",
+         "especialidad": {
+            "id": 2,
+            "nombre": "pedriatria"
+         },
+         "institucion": {
+            "id": 2017,
+            "nombre": "Hospital Cero"
+         }
+      },
+      "paciente": {
+         "id": 1692,
+         "rut": "25901234-5",
+         "nombre": "Agustina",
+         "apellido": "Flores",
+         "sexo": "F",
+         "fecha_nacimiento": "2022-06-26",
+         "telefono": 56933445566
+      }
+   },
+   {
+      "id": 14043,
+      "extraction_timestamp": "2025-05-16 12:23",
+      "fecha_hora": "2025-05-21 11:30",
+      "atencion": {
+         "id": 2,
+         "tipo": "control",
+         "lista": "lista normal",
+         "categoria": "cita medica"
+      },
+      "unidad_medica": {
+         "id": 40,
+         "nombre": "Edificio C"
+      },
+      "estado": {
+         "id": 4,
+         "nombre": "realizada"
+      },
+      "profesional": {
+         "id": 146,
+         "rut": "18345678-9",
+         "nombre": "Pedro",
+         "apellido": "Fernandez",
+         "especialidad": {
+            "id": 4,
+            "nombre": "cardiologia"
+         },
+         "institucion": {
+            "id": 2017,
+            "nombre": "Hospital Cero"
+         }
+      },
+      "paciente": {
+         "id": 2417,
+         "rut": "15012345-6",
+         "nombre": "Isidora",
+         "apellido": "Vargas",
+         "sexo": "F",
+         "fecha_nacimiento": "2014-11-09",
+         "telefono": 56980123457
+      }
+   },
+   {
+      "id": 14131,
+      "extraction_timestamp": "2025-05-16 12:23",
+      "fecha_hora": "2025-05-19 11:15",
+      "atencion": {
+         "id": 3,
+         "tipo": "diagnostico",
+         "lista": "lista normal",
+         "categoria": "cita medica"
+      },
+      "unidad_medica": {
+         "id": 30,
+         "nombre": "Edificio B"
+      },
+      "estado": {
+         "id": 1,
+         "nombre": "agendada"
+      },
+      "profesional": {
+         "id": 192,
+         "rut": "5987654-K",
+         "nombre": "Luis Alberto",
+         "apellido": "Martinez",
+         "especialidad": {
+            "id": 3,
+            "nombre": "cardiologia"
+         },
+         "institucion": {
+            "id": 2017,
+            "nombre": "Hospital Cero"
+         }
+      },
+      "paciente": {
+         "id": 2272,
+         "rut": "14901234-5",
+         "nombre": "Nicolas",
+         "apellido": "Gonzalez",
+         "sexo": "M",
+         "fecha_nacimiento": "2002-12-09",
+         "telefono": 56990123456
+      }
+   }
+]
