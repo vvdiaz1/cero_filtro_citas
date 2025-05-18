@@ -2,7 +2,7 @@
 
 A continuación, se muestran a manera de ejemplo la estructura te los archivos citas.json y reglas.json que recibe el módulo. 
 
-De igual forma dentro de la carpeta [docs/json_templates](/docs/json_templates) encontaras archivos de ejemplo.
+De igual forma dentro de la carpeta [assets/json_templates](/assets/json_templates) encontaras archivos de ejemplo.
 
 ### citas.json
 

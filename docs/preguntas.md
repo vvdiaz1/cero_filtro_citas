@@ -2,6 +2,8 @@
 
 1. **Un centro médico te pide directamente con carácter urgente modificar sus políticas de contacto con pacientes de manera que entra en conflicto con tu implementación actual. ¿Cuál sería tu estrategia para abordar esta situación?**	
    
+   
+   
 - entender plazos esperados para la modificación (que es urgente)
 - evaluar de que manera entra en conflicto con la implementación
     - falta agregar una variable por ejemplo hay que filtrar por sexo de la persona y no lo tengo contemplado en el flujo pero tengo la info y lo puedo agregar
@@ -10,7 +12,7 @@
 
 
 
-2. **Necesitas comunicar ciertas restricciones técnicas a representantes institucionales sin formación tecnológica. ¿Qué métodos utilizarías para asegurar una comunicación efectiva?**
+1. **Necesitas comunicar ciertas restricciones técnicas a representantes institucionales sin formación tecnológica. ¿Qué métodos utilizarías para asegurar una comunicación efectiva?**
    
 - primero que nada es importante entender el contexto del publico al que me dirijo, que conocimiento del problema tienen estos representantes institucionales son los stakeholders tipo directorio o es alguien no tecnico que esta en la operacion
 - teniendo lo anterior en consideración hay que ver el mejor camino, idealmente tener una presentacion con slides tipo demo o algun diagrama que muestre el flujo y el punto donde esta el problema
