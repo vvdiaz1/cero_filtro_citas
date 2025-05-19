@@ -26,6 +26,7 @@ Este módulo fue diseñado con la capacidad de adaptar el sistema a nuevas regla
 ### Paso 1: Clona el repositorio
 ```
 git clone https://github.com/vvdiaz1/cero_filtro_citas.git
+cd cero_filtro_citas
 ```
 
 ### Paso 2: Crea un ambiente virtual
