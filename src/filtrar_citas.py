@@ -296,9 +296,22 @@ def dias_hasta_cita(
         return(fecha_hora-hoy).days
     return None
 
-def match_dias_antes(condicion,cita,hoy:str = date.today().strftime('%Y-%m-%d')):
-    #se asume que si no viene la cantidad de dias antes para contactar se tiene que hacer a 1 dia de la cita 
-    #es decir el dia antes de esta
+def match_dias_antes(
+        condicion:Dict[str, Union[int, str, bool]],
+        cita:Dict[str, Union[int, str, bool]],
+        hoy:str = date.today().strftime('%Y-%m-%d')
+        )->Union[bool, None]:
+    """
+    Verifica la cantidad de dias que faltan para la cita y si esto hace match con lo indicado en la condición
+    
+    Args: 
+    - condicion: diccionario que representa la condición de la regla
+    - cita: diccionario que representa la información de la cita del paciente
+    - hoy: string que contiene el día que se considera como el actual(hoy) en caso de que se quieran revisar fechas ficticias, con formato YYYY-MM-DD
+    Returns:
+        True si la condición de dias para la cita hace match, False en caso contrario.
+        Devuelve None si no se encuentra la información en la condición.
+    """
     if condicion.get('dias_antes',None) is not None and cita.get("fecha_hora", None)is not None:
         fecha_hora =cita.get("fecha_hora", None)
         return condicion.get('dias_antes',None)==dias_hasta_cita(fecha_hora,hoy)
@@ -308,7 +321,23 @@ def match_dias_antes(condicion,cita,hoy:str = date.today().strftime('%Y-%m-%d'))
         return dias_antes_default ==dias_hasta_cita(fecha_hora,hoy)
 
 
-def condicion_match(condicion, cita,hoy:str = date.today().strftime('%Y-%m-%d')):
+def condicion_match(
+                condicion:Dict[str, Union[int, str, bool]],
+        cita:Dict[str, Union[int, str, bool]],
+        hoy:str = date.today().strftime('%Y-%m-%d')
+        )->Union[bool, None]:
+    """
+    Verifica todas las validaciones de match presentes y evalua si la cita cumple con dichas condiciones
+    
+    Args: 
+    - condicion: diccionario que representa la condición de la regla
+    - cita: diccionario que representa la información de la cita del paciente
+    - hoy: string que contiene el día que se considera como el actual(hoy) en caso de que se quieran revisar fechas ficticias, con formato YYYY-MM-DD
+    Returns:
+        True si la cita cumple con las condiciones, False en caso contrario.
+        Devuelve None si no se encuentra la información en la condición.
+    """
+        # condicion, cita,hoy:str = date.today().strftime('%Y-%m-%d')):
     checks = [
         match_especialidad(condicion, cita),
         match_profesional(condicion, cita),
@@ -326,6 +355,17 @@ def contactar_cita(
         reglas:List[Dict[str, Union[int, str, bool]]], 
         hoy:str = date.today().strftime('%Y-%m-%d')
     )->Union[bool,None]:
+    """
+        Valida para la cita si se debe contactar en base a todas las reglas disponibles
+        
+        Args: 
+        - condicion: diccionario que representa la condición de la regla
+        - cita: diccionario que representa la información de la cita del paciente
+        - hoy: string que contiene el día que se considera como el actual(hoy) en caso de que se quieran revisar fechas ficticias, con formato YYYY-MM-DD
+        Returns:
+            True si el paciente de la cita debe ser contactado, False en caso contrario.
+            Devuelve None si no se encuentra la información en la condición.
+        """
     for regla in reglas:
         if regla.get("activa")==True:
             checks = []
@@ -380,58 +420,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-# # ##########################################
-# #2
-
-# reglas=cargar_reglas(reglas_path =r"data\reglas.json")
-# citas=cargar_citas(citas_path =r"data\citas.json")
-
-# # citas = [cita for cita in citas if cita['id']<300 ]
-# # regla=reglas[0]
-# # condicion=regla.get("condiciones")[0]
-# hoy='2025-05-18'
-
-# output:list = filtrar_citas_para_contactar(citas, reglas, hoy)
-# with open("citas_filtradas.json", 'w') as json_file:
-#     json.dump(output, json_file, indent=3)
-
-# for cita in citas:    
-#     print("id: ",cita.get("id",{}), " - ",contactar_cita(cita,reglas, hoy))
-#     # print("match_dias_antes: ",match_dias_antes(condicion,cita, hoy))#dias
-
-
-
-
-# # # for cita in citas:
-# # #     # print("id: ",cita.get("id",{}))
-# # #     # print("especialidad: ",cita.get("profesional",{}).get("especialidad",{}).get("nombre"))
-# # #     # print("profesional: ",cita.get("profesional",{}).get("apellido"))
-# # #     # print("tipo_lista: ",cita.get("atencion",{}).get("lista"))
-# # #     # print("atencion: ",cita.get("atencion",{}).get("tipo"))
-# # #     # print("estado: ",cita.get("estado",{}).get("nombre"))
-# # #     # print("edad: ", get_edad(cita.get("paciente",{}).get("fecha_nacimiento",None), hoy))
-# # #     # print("dias_hasta_cita: ",dias_hasta_cita(cita.get("fecha_hora", None),hoy))
-# # #     # print("hoy: ",hoy, " - fecha_hora: ",cita.get("fecha_hora", None))
-# # #     print("contactar_cita: ",contactar_cita(cita,reglas, hoy))
-# # #     # print("-"*20)
-# # #     for condicion in regla.get("condiciones",[]):
-# # #         print("regla: ",regla.get("regla"))
-# # #         print("match_especialidad: ",match_especialidad(condicion,cita)) #cardio
-# # #         print("match_profesional: ",match_profesional(condicion,cita))
-# # #         print("match_tipo_lista: ",match_tipo_lista(condicion,cita))
-# # #         print("match_tipo_atencion: ",match_tipo_atencion(condicion,cita))#diagnostico
-# # #         print("match_unidad_medica: ",match_unidad_medica(condicion,cita))
-# # #         print("match_estado: ",match_estado(condicion,cita))
-# # #         print("match_tercera_edad: ",match_tercera_edad(condicion, cita,hoy))
-# # #         print("match_dias_antes: ",match_dias_antes(condicion,cita, hoy))#dias
-# # #         print("----- FIN CONDICION -----")
-# # #     print("-"*50)
-# # #     print("-"*50)
-
-# # # for cita in citas:    
-# # #     print("id: ",cita.get("id",{}), " - ",contactar_cita(cita,reglas, hoy))
-
-
-
-    
